@@ -1,9 +1,10 @@
-inData = int(input('Введите любое число: '))
+inData = input('Введите любое число: ')
 
-if inData == 0:
+
+if inData[-1] == '0':
     print(inData, 'рублей')
-elif inData == 1:
+elif inData[-1] == '1':
     print(inData, 'рубль')
-elif inData < 5:
+elif inData[-1] < '5':
     print(inData, 'рубля')
 else: print(inData, 'рублей')
